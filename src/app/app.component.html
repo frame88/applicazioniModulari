@@ -1,7 +1,11 @@
-navigation bar
-<hr>
+<app-navbar></app-navbar>
 <router-outlet></router-outlet>
 
-<!-- Shared Modules
-creazione di due cartelle/moduli principali: Features, e Shared con all'interno i relativi componenti.
-Vedere il resto in OneNote del 8/09 - SharedModules. -->
+<!-- Creazione di una nuova cartella Core, che conterrà i componenti tipo la navbar o/e un footer.
+
+ng g m core
+ng g c core/components/navbar
+
+Importo in app.module.ts il modulo CoreModule. Sposto il contenuto da app.component.html in navbar.component.html, e
+affinchè i pulsanti della navbar funzionino importo in core.module.ts il modulo RouterModule. -->
+

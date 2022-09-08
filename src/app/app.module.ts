@@ -10,6 +10,7 @@ import { CatalogListComponent } from './features/catalog/components/catalog-list
 import { LoginModule } from './features/login/login.module';
 import { ContactsModule } from './features/contacts/contacts.module';
 import { ContactComponent } from './features/contact/contact.component';
+import { CoreModule } from './Core/core.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContactComponent } from './features/contact/contact.component';
     AppRoutingModule,
     CatalogModule,
     LoginModule,
-    ContactsModule
+    ContactsModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
