@@ -5,18 +5,21 @@ import { CatalogFormComponent } from './components/catalog-form/catalog-form.com
 import { SharedModule } from 'src/app/shared/shared.module';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { NoResultsComponent } from './no-results.component';
 
 @NgModule({
     declarations: [
         CatalogComponent,
         CatalogListComponent,
-        CatalogFormComponent
+        CatalogFormComponent,
+        NoResultsComponent
     ],
     imports: [
         CommonModule,
         SharedModule,
         RouterModule.forChild([
-            { path: '', component: CatalogComponent }
+            { path: '', component: CatalogComponent },
+            { path: 'no-results', component: NoResultsComponent }
         ])
     ],
     providers: []

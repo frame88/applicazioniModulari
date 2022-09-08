@@ -1,4 +1,10 @@
-<app-alert class="text-center">Catalog Error</app-alert>
+<div class="container text-center">
+    <app-alert class="text-center text-uppercase fw-bold">Catalog Error</app-alert>
+    <div>
+        <input class="rounded" type="text">
+        <button class="rounded" (click)="search()">search</button>
 
-<app-catalog-form></app-catalog-form>
-<app-catalog-list></app-catalog-list>
+    </div>
+    <app-catalog-form></app-catalog-form>
+    <app-catalog-list></app-catalog-list>
+</div>
