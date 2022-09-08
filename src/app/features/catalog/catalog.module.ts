@@ -4,7 +4,7 @@ import { CatalogListComponent } from './components/catalog-list/catalog-list.com
 import { CatalogFormComponent } from './components/catalog-form/catalog-form.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { CommonModule } from '@angular/common';
-import { AlertComponent } from 'src/app/shared/components/alert/alert.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
     declarations: [
@@ -14,7 +14,10 @@ import { AlertComponent } from 'src/app/shared/components/alert/alert.component'
     ],
     imports: [
         CommonModule,
-        SharedModule
+        SharedModule,
+        RouterModule.forChild([
+            { path: '', component: CatalogComponent }
+        ])
     ],
     providers: []
 })
