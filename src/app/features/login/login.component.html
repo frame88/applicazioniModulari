@@ -1,6 +1,16 @@
 <!-- <p>login works!</p> -->
 <div class="container text-center">
     <app-alert><h1>ATTENZIONE</h1></app-alert>
-    errore nella sezione login  
+    <h5>messaggio che assicura che la route login è stata correttamente caricata</h5>  
 </div>
+
+
+<div class="container text-center mt-5">
+    <button routerLink="signin" class="px-3 rounded bg-danger text-uppercase text-light">sign in</button>
+    <button routerLink="lostpass" class="px-3 rounded bg-danger text-uppercase text-light">lost pass</button>
+    <button routerLink="registration" class="px-3 rounded bg-danger text-uppercase text-light">registration</button>
+</div>
+<router-outlet></router-outlet>
+
+<!-- Router children e router-outlet secondario -->
 
